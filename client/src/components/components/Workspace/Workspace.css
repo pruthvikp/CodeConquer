@@ -1,0 +1,260 @@
+/* Workspace Container */
+.workspace-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: #181818; /* Dark background */
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Problem Description Container */
+.problem-desc-container {
+    flex: 1;
+    max-width: 40%;
+    background: #2c2c2c; /* Darker background for contrast */
+    border-radius: 5px;
+    border: 2px solid #444;
+    padding: 1rem;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    color: #f0f0f0; /* Light text color */
+    box-sizing: border-box;
+}
+
+/* Problem Description Container */
+.problem-description-container {
+    background: #2e2e2e; /* Dark background */
+    color: #f0f0f0; /* Light text color for contrast */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+/* Title */
+.problem-description-container h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #ffffff; /* White color for title */
+}
+
+/* Problem Meta (Difficulty, Category, Companies) */
+.problem-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between elements */
+    margin-bottom: 1rem;
+}
+
+.problem-meta span {
+    background: #3a3a3a; /* Darker background for meta info */
+    border-radius: 15px;
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    padding-bottom: 0.25rem;
+    /* font-size: 0.875rem; */
+}
+
+.problem-meta .difficulty {
+    color: #218eaf; /* Highlight difficulty */
+}
+
+.problem-meta .category {
+    color: #a0aec0; /* Slightly lighter color for category */
+}
+
+.problem-meta .companies {
+    color: #63b3ed; /* Highlight companies */
+}
+
+/* Description */
+.problem-description-container p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+/* Examples Section */
+.examples {
+    margin-top: 1rem;
+}
+
+.examples h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0; /* Slightly lighter color for headers */
+}
+
+.examples div {
+    background: #3a3a3a; /* Darker background for example blocks */
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.examples p {
+    margin: 0.25rem 0;
+    font-size: 0.875rem;
+}
+
+/* Constraints Section */
+.constraints {
+    margin-top: 1rem;
+}
+
+.constraints h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0; /* Consistent color with examples headers */
+}
+
+.constraints ul {
+    list-style-type: disc;
+    padding-left: 1rem;
+}
+
+.constraints li {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Error and Loading States */
+.error, .loading {
+    text-align: center;
+    font-size: 1rem;
+    color: #ff6f6f; /* Red color for errors */
+    margin-top: 2rem;
+}
+
+/* Right Pane (Code Editor and Test Cases) */
+.right-pane {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Code Editor Container */
+.editor-container {
+    flex: 1;
+    background: #2c2c2c; /* Darker background for contrast */
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    color: #f0f0f0; /* Light text color */
+    min-height: 0;
+    overflow-y: auto;
+}
+
+/* Test Cases Container */
+.testcase-container {
+    flex: 1;
+    background: #2c2c2c; /* Darker background for contrast */
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    color: #f0f0f0; /* Light text color */
+    min-height: 0;
+    overflow-y: auto;
+}
+
+/* Code Editor and Test Cases Heading */
+.code-editor-heading,
+.test-cases-heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #444; /* Darker border */
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    color: #f0f0f0; /* Light text color */
+}
+
+/* Compile Button Container */
+.compile-btn-container {
+    padding: 0.5rem;
+    border-top: 1px solid #444; /* Darker border */
+    display: flex;
+    justify-content: flex-end;
+    background: #2c2c2c; /* Darker background */
+    margin-top: auto;
+    box-sizing: border-box;
+}
+
+/* Compile Button Styling */
+.compile-btn-container button {
+    background-color: #2db55d;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff; /* Light text color */
+    transition: background-color 0.3s ease;
+}
+
+.compile-btn-container button:hover {
+    background-color: #0e7231;
+}
+
+/* Test Case Number Styling */
+.test-case-number {
+    background-color: #333; /* Slightly lighter dark background */
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: #2db55d; /* Button color for consistency */
+}
+
+/* Test Case Input and Output */
+.testcase-input,
+.testcase-output {
+    background: #262626; /* Darker background for input/output */
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    color: #f0f0f0; /* Light text color */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1024px) {
+    .problem-desc-container {
+        max-width: 45%;
+    }
+
+    .right-pane {
+        padding-left: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .workspace-container {
+        flex-direction: column;
+    }
+
+    .problem-desc-container,
+    .right-pane {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .right-pane {
+        padding-left: 0;
+    }
+
+    .editor-container,
+    .testcase-container {
+        height: auto;
+    }
+}
